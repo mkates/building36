@@ -1,0 +1,77 @@
+
+
+.hero-unit-container {
+	width: 100%;
+	background: url("../img/wood.png") repeat;
+	padding: 0;
+	margin: 0;
+}
+
+.hero-unit {
+	padding-top: 15px;
+	max-width: 1200px;
+	height: 318px;
+	margin: 0 auto 40px auto;
+	background: none;
+	background: url("../img/fireplace.png") center no-repeat;
+}
+
+/*Hero-Unit 2 is for the mobile formatting */
+
+.hero-unit2 {
+	text-align: center;
+	margin: 0 auto 20px auto;
+	background: url("../img/wood.png") repeat;
+	padding: 30px 10px;
+}
+.hero-unit2 p {
+	font-size: 20px;
+}
+
+.hero-unit h1 {
+	margin-bottom: 10px;
+	font-size: 46px;
+	height: 46px;
+	overflow: hidden;
+	margin-left: 55%;
+	font-family: "proxima-nova-1","proxima-nova-2",Helvetica,Arial,sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 50px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    text-shadow: 0 1px white;
+}
+.hero-unit p {
+	margin: 30px 0 20px 0;
+	margin-left: 55%;
+	line-height: 28px;
+	max-width: 450px;
+	font-weight: 900;
+	font-size: 20px;
+	color: #444;
+	text-shadow: 0 1px 1px #f6f6e4;
+}
+.marketing {
+	max-width: 960px;
+	margin: 0 auto;
+}
+.section {
+	text-align: center;
+	margin:  0 0px 20px 0px;
+	border: 13px solid #dbdbdb;
+	overflow: hidden;
+	max-height: 320px;
+	background: #f9f9f9;
+}
+.section h4 {
+	color: #777;
+}
+.section p {
+	font-size: 12px;
+	padding: 0 10px;
+	color: #999;
+}
+.comfort-img {
+	float: left;
+}

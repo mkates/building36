@@ -1,0 +1,43 @@
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+.container h3 {
+	font-size: 34px;
+	margin: 40px 0 40px 0;
+}
+
+.container p {
+	padding-top: 20px;
+}
+.manu_action {
+	margin-top: 30px;
+}
+.manu_action a {
+	padding: 0 20px;
+	margin: 0 0 40px 0;
+}
+.manu_action h5 {
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 10px;
+}
+
+.manu_action h6 {
+	font-size: 20px;
+}
+
+.moreinfo .span6 {
+	border: 6px solid #ddd;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	min-height: 170px;
+	background: #f8f8f8;
+}
+.moreinfo h4 {
+	line-height: 20px;
+	padding: 0;
+	margin: 0;
+}

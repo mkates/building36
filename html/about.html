@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang='en'>
+
+<head>
+	
+	<!--Title and Meta Tags-->
+	<title>Building 36 Technologies</title>
+	<meta name="description" content="Building 36 Description">
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<!--CSS-->
+	<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="../css/font-awesome.css">
+	<link href="../css/base.css" rel="stylesheet" type="text/css" />	
+	<link href="../css/about.css" rel="stylesheet" type="text/css" />	
+	<script src="../js/jquery.js" type="text/javascript" ></script>
+	<script>
+		//Tab Functionality for about pages
+		//For this to work, the id of the tab must match
+		//the class of the section i.e. tab id='mission so
+		//content class='mission'
+		$(document).ready(function() {
+			$(".sidebar ul li").click(function() {
+				if (!($(this).hasClass("active"))) {
+					$(".sidebar ul li").removeClass("active");
+					$(this).addClass("active");
+					toggletabs(this)
+				}	
+			});
+		
+		var toggletabs = function toggletabs(handle) {
+			var id = $(handle).attr('id');
+			var sections = $(".mainbar .section");
+			for (var i=0;  i < sections.length; i++) {
+				var section = $(sections[i]);
+				if (section.hasClass("visible")) {
+					section.removeClass("visible");
+					section.fadeOut('fast',function() {
+						$("."+id).addClass("visible");
+						$("."+id).fadeIn();
+					
+					});
+				}		
+			}
+		}		
+		});
+	</script>
+</head>
+
+<body>
+	<div class="header-block"></div>
+	
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span2 sidebar">
+				<ul>
+					<li id="mission" class="active"> Our Mission<span> &#x25B6 </span> </li>
+					<li id="team"> Team <span> &#x25B6</span></li>
+					<li id="careers"> Careers <span> &#x25B6 </span></li>
+					<li id="privacy"> Privacy Policy <span> &#x25B6 </span></li>
+					<li id="tos"> Terms <span> &#x25B6</span></li>
+				</ul>
+			</div>
+			<div class="span10 mainbar">
+				<div class="section mission visible">
+					<h3> Our Mission </h3>
+					<img src="../img/buspic.png" />
+					<p> After years of working on HVAC control systems, our founders wanted to find a better
+					way to help homeowners reduce their energy usage, without sacrificing comfort. Building
+					36's industry leading technology gives users the ability to monitor and control every aspect
+					of their home - thermostat, lights, locks, and more - from any smartphone, tablet, or PC.</p>
+				</div>
+				<div class="section team">
+					<h3> Our Team </h3>
+					<p> We have a strong and dedicated team that puts in 100% effort. We have a strong and dedicated team that puts in 100% effort.
+					We have a strong and dedicated team that puts in 100% effort. We have a strong and dedicated team that puts in 100% effort.</p>
+					<div class="team-member row-fluid">
+						<div class="span3"> 
+							<img src="../img/profilepics/dan.png"/>
+						</div>
+						<div class="span9 text">
+							<h4> Dan Goodman <span> CEO and Cofounder</span></h4>
+							<p> Dan is an experienced HVAC professional. Dan is an experienced HVAC professional.
+							Dan is an experienced HVAC professional. Dan is an experienced HVAC professional. Dan is an experienced HVAC professional.</p>
+							<div class="links">
+								<ul>
+									<li><a href="https://www.facebook.com/dan.goodman.100"><i class="icon-facebook"></i></a></li>
+									<li><a href="https://www.linkedin.com/pub/dan-goodman/1/519/530"><i class="icon-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="team-member row-fluid">
+						<div class="span3"> 
+							<img src="../img/profilepics/craig.png"/>
+						</div>
+						<div class="span9 text">
+							<h4> Craig Heffernan <span> CTO and Cofounder </span></h4>
+							<p> Dan is an experienced HVAC professional. Dan is an experienced HVAC professional.
+							Dan is an experienced HVAC professional. Dan is an experienced HVAC professional. Dan is an experienced HVAC professional.</p>
+							<div class="links">
+								<ul>
+									<li><a href="https://www.linkedin.com/pub/craig-heffernan/6/2aa/232"><i class="icon-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section careers">
+					<h3> Careers</h3>
+					<p> A fun and engaging environment with room to grow and expand your horizons. We are located
+					in Needham, MA twenty minutes outside of the city, and offer full 401K matching, health insurance, and more.</p>
+					<div class="job">
+						<h4> Back End Engineer <span> <a class="btn btn-custom-red" href="#">Apply</a><span></h4>
+						<h5> Description </h5>
+						<p> You will work in the main Needham, MA office and be responsible for implementing the back end system of our HVAC system, integrating
+						with alarm.com and several other third party platforms</p>
+						<h5> Skills Needed</h5>
+						<ul>
+							<li> 2+ Years Experience with back end development</li>
+							<li> Comfortable with jquery, AJAX, python and mySQL</li>
+							<li> Masters Degree in Computer Science</li>
+						</ul>
+					</div>
+					<div class="job">
+						<h4> Back End Engineer <span> <a class="btn btn-custom-red" href="#">Apply</a><span></h4>
+						<h5> Description </h5>
+						<p> You will work in the main Needham, MA office and be responsible for implementing the back end system of our HVAC system, integrating
+						with alarm.com and several other third party platforms</p>
+						<h5> Skills Needed</h5>
+						<ul>
+							<li> 2+ Years Experience with back end development</li>
+							<li> Comfortable with jquery, AJAX, python and mySQL</li>
+							<li> Masters Degree in Computer Science</li>
+						</ul>
+					</div>
+				</div>
+				<div class="section privacy">
+					<h3> Privacy Policy </h3>
+					<p> Our innovative B36Gx10x system is the brain of your smart home. The device securely
+						communicates with all of the connected devices in your home, giving you control of your
+						thermostat, locks, lights and more. Control your whole home from any smartphone, tablet, or
+						PC, or set your preferences and let your home automate itself.</p>
+					<p> Our innovative B36Gx10x system is the brain of your smart home. The device securely
+						communicates with all of the connected devices in your home, giving you control of your
+						thermostat, locks, lights and more. Control your whole home from any smartphone, tablet, or
+						PC, or set your preferences and let your home automate itself.</p>
+				</div>
+				<div class="section tos">
+					<h3> Terms of Service </h3>
+					<p> Our innovative B36Gx10x system is the brain of your smart home. The device securely
+						communicates with all of the connected devices in your home, giving you control of your
+						thermostat, locks, lights and more. Control your whole home from any smartphone, tablet, or
+						PC, or set your preferences and let your home automate itself.</p>
+					<p> Our innovative B36Gx10x system is the brain of your smart home. The device securely
+						communicates with all of the connected devices in your home, giving you control of your
+						thermostat, locks, lights and more. Control your whole home from any smartphone, tablet, or
+						PC, or set your preferences and let your home automate itself.</p>
+				</div>
+				
+			</div>
+		</div>
+    </div>
+	
+	<div class="footer-block"></div>
+	
+	<!--Javascript-->
+	<script src="../js/header.js" ></script>
+	<script src="../js/footer.js" ></script>
+	<script src="../js/bootstrap.js" type="text/javascript" ></script>
+</body>
+</html>

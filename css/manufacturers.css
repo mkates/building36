@@ -1,0 +1,67 @@
+.hero-unit-container {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.hero-unit {
+	padding-top: 15px;
+	max-width: 1200px;
+	min-height: 400px;
+	margin: 0 auto 40px auto;
+	background: none;
+	background: url("../img/homes_faded.png") center bottom no-repeat;
+}
+.hero-unit h2 {
+	color: #444;
+    font-size: 42px;
+    line-height: 50px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    text-shadow: 0 2px white;
+	margin: 25px 0;
+}
+.hero-unit h4 {
+	font-weight: 100;
+	letter-spacing: 1px;
+	color: #333;
+	font-size: 20px;
+	line-height: 28px;
+	max-width: 960px;
+	margin: 0 auto;
+}
+.manu_action {
+	max-width: 960px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.manu_info {
+	max-width: 960px;
+	margin: 15px auto;
+	border:1px solid red;
+	height: 400px;
+}
+	
+.manu_action a {
+	padding: 0 20px;
+	margin: 0;
+}
+.manu_action h5 {
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 10px;
+}
+
+.manu_action h6 {
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+

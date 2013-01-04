@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang='en'>
+
+<head>
+	
+	<!--Title and Meta Tags-->
+	<title>Building 36 Technologies</title>
+	<meta name="description" content="Building 36 Description">
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<!--CSS-->
+	<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="../css/font-awesome.css">
+	<link href="../css/base.css" rel="stylesheet" type="text/css" />	
+	<link href="../css/login.css" rel="stylesheet" type="text/css" />	
+	
+	<!--Alarm.com provided login javascript-->
+	<script src="../js/login.js" ></script>
+	
+</head>
+
+<body>
+	
+	<div class="header-block"></div>
+	
+	<div class="login">
+		<h2> Building 36 Login </h2>
+		<form class="loginform" action="https://www.alarm.com/login.asp" method="POST" name="loginForm" onSubmit="javascript:doLoginTimeChecks();">
+			  <input type="hidden" name="JavaScriptTest" value="" />
+			  <input type="hidden" name="cookieTest" value="" />
+			  <input type="hidden" name="loginFolder" value="http://web.mit.edu/mkates/www/Building36/html/login.html" />
+			  <div id="divAlarmMessage"></div> 
+			  <script language="javascript">
+				  showAlarmLoginMessage()
+			  </script>
+			  <p>Login:</p>
+			  <input type="text" size="15" name="login" id="login" />
+			  <p>Password:</p>
+			  <input type="password" size="15" name="password" id="password" />
+			  
+			  <!-- Remember Me (Optional) -->         
+			  <input type="checkbox" name="rememberMe" id="rememberMe" onclick="javascript:rememberMeClick()"/> 
+			  <div class="rememberme">Remember Me</div>
+			  <script language="javascript">
+				  LoadRememberedLoginName()
+			  </script>
+			  <!-- End of Remember Me -->
+			 <input type="submit" class="btn btn-custom-red btn-large loginbutton" value="Login" />
+	  </form>
+	</div><!-- /.login -->
+
+	<div class="footer-block"></div>
+
+	<!--Javascript-->
+	<script src="../js/jquery.js" type="text/javascript" ></script>
+	<script src="../js/bootstrap.js" type="text/javascript" ></script>
+	<script src="../js/header.js" ></script>
+		<script src="../js/footer.js" ></script>
+</body>
+</html>

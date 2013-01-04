@@ -1,0 +1,119 @@
+.container-fluid {
+	max-width: 960px;
+	margin: 30px auto;
+}
+.section {
+	display: none;
+}
+.mission {
+	display: block;
+}
+.container-fluid .row-fluid .sidebar {
+	margin: 0 0 30px 0;
+	padding: 10px 10px 0 10px;
+}
+
+.sidebar ul {
+	list-style-type: none;
+	padding: 0px 0 0px 0px;
+	margin: 0;
+}
+.sidebar ul li:hover {
+	background: #ededed;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.sidebar ul .active {
+	background: #980000;
+	color: white;
+	border-radius: 3px;	
+}
+.sidebar ul .active:hover {
+	background: #980000;
+	color: white;
+	border-radius: 3px;	
+}
+.sidebar ul li span {
+	display: none;
+}
+.sidebar ul .active span {
+	float: right;	
+	display: inline;
+	font-size: 24px;
+	margin-right: -10px;
+	margin-top: 0px;
+	color: #980000;
+}
+.sidebar ul li {
+	padding: 10px 0 10px 10px;
+	margin: 0;
+	color: #666;
+}
+
+.container-fluid .row-fluid .mainbar {
+	margin: 0 0 0px 0;
+	padding: 0 10px 0 10px;
+}
+/*Main Content*/
+.section {
+	padding: 0 20px 0 40px;
+	min-height: 500px;
+}
+.section p {
+	padding: 10px 0;
+}
+.team-member {
+	margin: 25px 0 25px 0;
+	border-bottom: 1px solid #ddd;
+}
+.team-member h4 span {
+	font-size:14px;
+	color: #888;
+	float: right;
+}
+.team-member .span3 {
+	text-align: center;
+	margin: 20px 0;
+}
+.team-member .span3 img {
+	margin-top: -20px;
+}
+
+.team-member .text p {
+	color: #444;
+}
+.team-member .links ul{
+	list-style-type: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+.team-member .links ul li{
+	display: inline;
+	margin: 0 5px 0 0px;
+}
+.team-member .links ul li a{
+	font-size: 24px;
+	border-radius: 3px;
+	background: #323c61;
+	color: white;
+}
+.team-member .links ul li a:hover{
+	text-decoration: none;
+	color: #9ddbff;
+}
+.job {
+	border: 7px solid rgba(0, 0, 0, 0.05);
+	padding: 10px 10px 20px 10px;
+	margin: 20px 0;
+}
+.job h4 span {
+	float: right;
+	margin-right: 7px;
+	margin-top: -4px;
+}
+.job h4 {
+	margin-bottom: 30px;
+}
+ 
+
