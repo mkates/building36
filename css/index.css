@@ -1,5 +1,3 @@
-
-
 .hero-unit-container {
 	width: 100%;
 	background: url("../img/wood.png") repeat;
@@ -30,20 +28,18 @@
 
 .hero-unit h1 {
 	margin-bottom: 10px;
-	font-size: 46px;
 	height: 46px;
-	overflow: hidden;
 	margin-left: 55%;
 	font-family: "proxima-nova-1","proxima-nova-2",Helvetica,Arial,sans-serif;
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 900;
     line-height: 50px;
     padding-bottom: 0px;
-    padding-top: 10px;
+    padding-top: 30px;
     text-shadow: 0 1px white;
 }
 .hero-unit p {
-	margin: 30px 0 20px 0;
+	margin: 40px 0 30px 0;
 	margin-left: 55%;
 	line-height: 28px;
 	max-width: 450px;
@@ -52,6 +48,9 @@
 	color: #444;
 	text-shadow: 0 1px 1px #f6f6e4;
 }
+.hero-unit2 h1,.hero-unit2 p {
+	margin: 30px 0 20px 0;
+}
 .marketing {
 	max-width: 960px;
 	margin: 0 auto;
@@ -59,7 +58,7 @@
 .section {
 	text-align: center;
 	margin:  0 0px 20px 0px;
-	border: 13px solid #dbdbdb;
+	border: 13px solid #ccc;
 	overflow: hidden;
 	max-height: 320px;
 	background: #f9f9f9;

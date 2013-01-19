@@ -6,13 +6,13 @@
 .container-custom h2 {
 	margin-bottom: 30px;
 }
-.container-custom .span4 {
+.container-custom .infobox {
 	border: 13px solid #dbdbdb;
-	min-height: 250px;
+	min-height: 245px;
 	padding-top: 30px;
 	margin-bottom: 20px;
 }
-.container-custom .span4 i {
+.container-custom .infobox i {
 	font-size: 48px;
-	color: #800000
+	color: #49a942;
 }

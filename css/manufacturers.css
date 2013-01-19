@@ -7,8 +7,9 @@
 
 .hero-unit {
 	padding-top: 15px;
+	padding-bottom: 200px;
 	max-width: 1200px;
-	min-height: 400px;
+	min-height: 350px;
 	margin: 0 auto 40px auto;
 	background: none;
 	background: url("../img/homes_faded.png") center bottom no-repeat;

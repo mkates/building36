@@ -13,17 +13,22 @@ $(document).ready(function() {
 		collapse.append('<span class="icon-bar"></span>');
 	};
 	container.append(collapse);
-	container.append('<a class="brand" href="index.html"><img src="../img/logo_bordered.png" alt="Building 36"/></a>');
+	container.append('<a class="brand" href="index.html"><img src="../img/logo_new.png" alt="Building 36"/></a>');
 	var navcollapse = $("<div class='nav-collapse'>");
 	container.append(navcollapse);
 	var navpullright =  $("<ul class='nav pull-right'>");
 	navcollapse.append(navpullright);
-	navpullright.append('<li><a href="solutions.html">SOLUTIONS</a></li>');
-	navpullright.append('<li><a href="manufacturers.html">MANUFACTURERS</a></li>');
-	navpullright.append('<li><a href="installers.html">INSTALLERS</a></li>');
-	navpullright.append('<li><a href="about.html">ABOUT</a></li>');
-	navpullright.append('<li><a href="contact.html">CONTACT</a></li>');
-	navpullright.append('<li><a href="login.html">LOGIN</a></li>');
+	navpullright.append('<li><a id="solutionstag" href="solutions.html">SOLUTIONS</a></li>');
+	navpullright.append('<li><a id="manutag" href="manufacturers.html">MANUFACTURERS</a></li>');
+	navpullright.append('<li><a id="installertag" href="installers.html">INSTALLERS</a></li>');
+	navpullright.append('<li><a id="abouttag" href="about.html">ABOUT</a></li>');
+	navpullright.append('<li><a id="contacttag" href="contact.html">CONTACT</a></li>');
+	navpullright.append('<li><a id="logintag" href="login.html">LOGIN</a></li>');
+	
+	//Adds an active class to the appropriate header list element
+	var classes = handler.attr('class').split(' ');
+	var pagename = classes[1];
+	$("#"+pagename).addClass("active");
 	
 });
 
